@@ -29,10 +29,8 @@ dependencies {
 	implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.6.0'
 }
 
-tasks.jar {
-  manifest {
-    attributes["Main-Class"] = "me.dio.Application"
-  }
+bootJar {
+  mainClassName = 'me.dio.Application'
 }
 
 tasks.named('test') {
